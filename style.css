@@ -1,0 +1,23 @@
+:root {
+    --purple: #80558C;
+    --white: #FFF;
+    --grey: #7C7C7C;
+
+    --text-size: 20px;
+    --h1-size: 36px;
+    --h2-size: 28px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.flex-ctn-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-ctn-column {
+display: flex;
+flex-direction: column;
+}
