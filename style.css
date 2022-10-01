@@ -64,3 +64,62 @@ header {
 .link-underline-effect:hover::after, .link-underline-effect:focus::after {
     transform: scaleX(1);
     }
+/* portfolio styling */
+.image-carousel {
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 3px 3px rgb(0, 0, 0, 0.4);
+    padding: 5px;
+}
+.images {
+    width: 500px;
+    height: 500px;
+    width: calc(500px - 10px);
+    height: calc(500px - 10px);
+}
+.slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    list-style: none;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-navigation {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.previous-slide, .next-slide {
+    background: none;
+    border: none;
+    font-size: 65px;
+    color: var(--grey);
+    outline: 1px solid transparent;
+    padding: 0;
+}
+
+.slide-indicators {
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+.slide-indicator {
+    padding: 4px;
+    border: none;
+    border-radius: 50%;
+    background: var(--grey);
+    cursor: pointer;
+    outline: 1px solid transparent
+}
+.previous-slide:focus, .next-slide:focus, .slide-indicator:focus {
+    outline: 1px solid var(--purple)
+}
