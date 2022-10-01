@@ -183,6 +183,9 @@ header {
     cursor: pointer;
     outline: 1px solid transparent
 }
+.slide-indicator[data-active-indicator]{
+    background: var(--purple);
+}
 .previous-slide:focus, .next-slide:focus, .slide-indicator:focus {
     outline: 1px solid var(--purple);
     color: var(--purple)
