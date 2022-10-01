@@ -63,7 +63,64 @@ header {
 }
 .link-underline-effect:hover::after, .link-underline-effect:focus::after {
     transform: scaleX(1);
-    }
+}
+/* hero styling */
+.hero {
+    height: 100vh;
+    border: solid 1px black;
+    background: url('./images/hero-bg.png');
+    background-size: cover;
+    background-position: right;
+    background-color: #222;
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.hero .wrapper {
+    max-width: 800px;
+}
+.hero-h1{
+    font-size: var(--h1-size);
+}
+.hero-h2{
+    font-size: var(--h2-size);
+    margin: 15px 0 0 0;
+}
+.link-fill-effect {
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--text-size);
+    border: solid 3px var(--white);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 30px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 0;
+}
+.link-fill-effect::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--purple);
+    overflow: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 200ms ease-in-out;
+    z-index: -1;
+}
+.link-fill-effect:hover::after, .link-fill-effect:focus::after{
+    transform: scaleX(1);
+}
+.link-fill-effect:focus{
+    outline: solid 1px var(--purple);
+}
 /* portfolio styling */
 .image-carousel {
     max-width: 500px;
