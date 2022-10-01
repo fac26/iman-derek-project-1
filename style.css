@@ -6,6 +6,7 @@
     --text-size: 18px;
     --h1-size: 36px;
     --h2-size: 28px;
+    --h3-size: 26px;
 }
 * {
     margin: 0;
@@ -24,6 +25,17 @@
 }
 .justify-space-between {
     justify-content: space-between;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    color: var(--purple);
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: var(--text-size);
 }
 
 /* navbar styling */
@@ -122,9 +134,14 @@ header {
     outline: solid 1px var(--purple);
 }
 /* portfolio styling */
+.portfolio p {
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
 .image-carousel {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto;
     box-shadow: 2px 2px 3px 3px rgb(0, 0, 0, 0.4);
     padding: 5px;
 }
