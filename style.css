@@ -6,6 +6,7 @@
     --text-size: 18px;
     --h1-size: 36px;
     --h2-size: 28px;
+    --h3-size: 26px;
 }
 * {
     margin: 0;
@@ -24,6 +25,17 @@
 }
 .justify-space-between {
     justify-content: space-between;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    color: var(--purple);
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: var(--text-size);
 }
 
 /* navbar styling */
@@ -120,4 +132,82 @@ header {
 }
 .link-fill-effect:focus{
     outline: solid 1px var(--purple);
+}
+/* portfolio styling */
+.portfolio p {
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+.image-carousel {
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 3px 3px rgb(0, 0, 0, 0.4);
+    padding: 5px;
+}
+.images {
+    width: 500px;
+    height: 500px;
+    width: calc(500px - 10px);
+    height: calc(500px - 10px);
+}
+.slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    list-style: none;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 300ms ease-in-out;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide[data-active-slide]{
+    opacity: 100%;
+    z-index: 1
+}
+.carousel-navigation {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.previous-slide, .next-slide {
+    background: none;
+    border: none;
+    font-size: 65px;
+    color: var(--grey);
+    outline: 1px solid transparent;
+    padding: 0;
+    cursor: pointer;
+}
+.slide-indicators {
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+.slide-indicator {
+    padding: 4px;
+    border: none;
+    border-radius: 50%;
+    background: var(--grey);
+    cursor: pointer;
+    outline: 1px solid transparent
+}
+.slide-indicator[data-active-indicator]{
+    background: var(--purple);
+}
+.previous-slide:focus, .next-slide:focus, .slide-indicator:focus {
+    outline: 1px solid var(--purple);
+    color: var(--purple)
+}
+.previous-slide:hover, .next-slide:hover {
+    color: var(--purple);
 }
