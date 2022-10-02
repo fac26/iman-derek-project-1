@@ -26,6 +26,12 @@
 .justify-space-between {
     justify-content: space-between;
 }
+h1 {
+    font-size: var(--h1-size);
+}
+h2 {
+    font-size: var(--h2-size);
+}
 h3 {
     font-size: var(--h3-size);
     color: var(--purple);
@@ -38,7 +44,7 @@ p {
     font-size: var(--text-size);
     text-align: justify;
 }
-@media (max-width: 600px){
+@media (max-width: 700px){
     p {
     font-size: 16px;
     }
@@ -126,11 +132,8 @@ header {
 .wrapper {
     max-width: 800px;
 }
-.hero-h1{
-    font-size: var(--h1-size);
-}
+
 .hero-h2{
-    font-size: var(--h2-size);
     margin: 15px 0 0 0;
 }
 .link-fill-effect {
@@ -232,6 +235,7 @@ header {
 .about-us-ctn {
     justify-content: center;
     gap: 40px;
+    margin-bottom: 30px;
 }
 .about-us-message {
     max-width: 700px;
