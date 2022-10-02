@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Purple Elephant</title>
 </head>
 <body>
     <header class="flex-ctn-row justify-space-between">
-        <img src="./images/logope.JPG" alt="Purple Elephant logo">
+        <img src="./images/pe-logo.png" alt="Purple Elephant logo">
         <nav>
             <ul class="flex-ctn-row navbar">
                 <li><a class="link-underline-effect" href="#">Home</a></li>
-                <!-- <li><a class="link-underline-effect" href="#">About us</a></li>
+                <li><a class="link-underline-effect" href="#">About us</a></li>
                 <li><a class="link-underline-effect" href="#">Portfolio</a></li>
-                <li><a class="link-underline-effect" href="#">Meet the team</a></li> -->
+                <li><a class="link-underline-effect" href="#">Meet the team</a></li>
                 <li><a class="link-underline-effect" href="/contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,8 +33,30 @@
                 <a href="#" class="link-fill-effect">Contact us</a>
             </div>
         </section>
-    
+        <section class="portfolio">
+            <h3>Portfolio</h3>
+            <p class="">Vivamus non mi condimentum, feugiat purus at, consequat urna. Nunc luctus eget felis auctor pretium. Fusce in cursus orci. Suspendisse at sagittis elit, id semper nulla.</p>
+            <div class="image-carousel">
+                <div class="images">
+                    <ul class="slides">
+                        <li class="slide" data-active-slide="true"><img src="./images/portfolio1.png" alt="Digital abstract paiting"</li>
+                        <li class="slide"><img src="./images/portfolio2.png" alt="Editorial magazine cover"</li>
+                        <li class="slide"><img src="./images/portfolio3.png" alt="Digital painting of field at night"</li>
+                        <li class="slide"><img src="./images/portfolio4.png" alt="Colour pencil portrait of woman"</li>
+                    </ul>
+                </div>
+                <div class="carousel-navigation flex-ctn-row">
+                    <button class="previous-slide">&#8249;</button>
+                    <div class="slide-indicators flex-ctn-row">
+                        <button class="slide-indicator" data-active-indicator></button>
+                        <button class="slide-indicator"></button>
+                        <button class="slide-indicator"></button>
+                        <button class="slide-indicator"></button>
+                    </div>
+                    <button class="next-slide">&#8250;</button>
+                </div>
+            </div>
+        </section>
     </main>
-
 </body>
 </html>
