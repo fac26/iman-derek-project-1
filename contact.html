@@ -5,30 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/iman-derek-project-1/style.css">
-    <title>Purple Elephant</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact us &vert; Purple Elephant</title>
 </head>
 <body>
     <header class="flex-ctn-row justify-space-between">
-        <img src="/iman-derek-project-1/images/logope.JPG" alt="Purple Elephant logo">
+        <img src="./images/pe-logo.png" alt="Purple Elephant logo">
         <nav>
             <ul class="flex-ctn-row navbar">
-                <li><a class="link-underline-effect" href="/iman-derek-project-1/index.html">Home</a></li>
-                <li><a class="link-underline-effect" href="#">Contact</a></li>
+                <li><a class="link-underline-effect" href="index.html">&laquo; Back to home</a></li>
             </ul>
         </nav>
     </header>
-    <!-- <main> -->
+    <main>
         <section class="hero2 flex-ctn-column">
             <br>
             <div class="wrapper">
                 
                 <div class="contact-us">
-                    <form>
+                    <form method="post" action="">
                         <h3>Contact us</h3>
                         <br>
-                        <input type="text" id="name" name="firstname" placeholder="Your full name..">
-                        <input type="text" id="email" name="email" placeholder="Your email..">
+                        <input type="text" id="name" name="firstname" placeholder="Your full name.." required>
+                        <input type="text" id="email" name="email" placeholder="Your email.." required>
                         <label class="artstyle">Select your art style...</label> <br><br>
                                       <select id="art" name="art">
                                         <option value="Realistic">Realistic</option>
@@ -36,15 +35,15 @@
                                         <option value="Pencil drawing">Pencil drawing</option>
                                         <option value="Concept art">Concept art</option> 
                                       </select> <br>
-                                      <textarea id="subject" name="subject" placeholder="Please describe what art you envision..." style="width:300px"></textarea>
+                                      <textarea id="subject" name="subject" placeholder="Please describe what art you envision..." style="width:300px" required></textarea>
                                       <br><br>
-                        <button type="button">SUBMIT</button>
+                        <button class="form-button"type="submit">SUBMIT</button>
                       </form>
             </div>
             <div class="wrapper">
                 <a href="https://beta.dreamstudio.ai/dream" class="link-fill-effect">Click here for inspiration</a>
             </div>
         </section>
-    <!-- </main> -->
+    </main>
 </body>
 </html>
