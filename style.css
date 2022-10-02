@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 :root {
     --purple: #80558C;
     --white: #FFF;
@@ -26,7 +27,6 @@
 .justify-space-between {
     justify-content: space-between;
 }
-
 h3 {
     font-size: var(--h3-size);
     color: var(--purple);
@@ -37,12 +37,10 @@ h3 {
 p {
     font-size: var(--text-size);
 }
-
 /* navbar styling */
 header {
     padding: 20px 10px;
 }
-
 .navbar {
     list-style: none;
     gap: 20px;
@@ -81,6 +79,19 @@ header {
     height: 100vh;
     border: solid 1px black;
     background: url('./images/hero-bg.png');
+    background-size: cover;
+    background-position: right;
+    background-color: #222;
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.hero2 {
+    height: 100vh;
+    border: solid 1px black;
+    background: url('./images/elephant.png');
     background-size: cover;
     background-position: right;
     background-color: #222;
@@ -133,6 +144,77 @@ header {
 .link-fill-effect:focus{
     outline: solid 1px var(--purple);
 }
+.contact-us {
+    background: #f8f4e5;
+    padding: 50px 100px;
+    border: 2px solid black;
+    box-shadow: 15px 15px 1px var(--purple), 15px 15px 1px 2px black;
+  }
+  h3 {
+    font-family: "Fjalla One";
+    color: #7C7C7C;
+    font-size: 25px;
+  }
+  input {
+    display: block;
+    width: 100%;
+    font-size: 14pt;
+    line-height: 28pt;
+    font-family: "Fjalla One";
+    margin-bottom: 28pt;
+    border: none;
+    border-bottom: 5px solid black;
+    background: #f8f4e5;
+    min-width: 250px;
+    padding-left: 5px;
+    outline: none;
+    color: black;
+  }
+  .artstyle {
+      font-family: "Fjalla One";
+      font-size: 14pt;
+      color: rgb(123, 117, 117);
+  }
+  
+  #subject {
+      font-family: "Fjalla One";
+      font-size: 13pt;
+      color: rgb(123, 117, 117); 
+      height: 100px;
+  }
+  #art {
+      display: block;
+      margin: 0 auto;
+      line-height: 28pt;
+      padding: 0 20px;
+      background: #ffa580;
+      letter-spacing: 2px;
+      transition: 0.2s all ease-in-out;
+      outline: none;
+      border: 1px solid black;
+      box-shadow: 3px 3px 1px var(--purple), 3px 3px 1px 1px black;
+  }
+  input:focus {
+    border-bottom: 5px solid #ffa580;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    line-height: 28pt;
+    padding: 0 20px;
+    background: #ffa580;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px var(--purple), 3px 3px 1px 1px black;
+  }
+  button:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+  }
 /* portfolio styling */
 .portfolio p {
     max-width: 800px;
