@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 :root {
     --purple: #80558C;
     --white: #FFF;
@@ -77,7 +76,6 @@ header {
 /* hero styling */
 .hero {
     height: 100vh;
-    border: solid 1px black;
     background: url('./images/hero-bg.png');
     background-size: cover;
     background-position: right;
@@ -90,7 +88,6 @@ header {
 }
 .hero2 {
     height: 100vh;
-    border: solid 1px black;
     background: url('./images/elephant.png');
     background-size: cover;
     background-position: right;
@@ -144,23 +141,18 @@ header {
 .link-fill-effect:focus{
     outline: solid 1px var(--purple);
 }
+/* contact us styling */
 .contact-us {
     background: #f8f4e5;
     padding: 50px 100px;
     border: 2px solid black;
     box-shadow: 15px 15px 1px var(--purple), 15px 15px 1px 2px black;
   }
-  h3 {
-    font-family: "Fjalla One";
-    color: #7C7C7C;
-    font-size: 25px;
-  }
   input {
     display: block;
     width: 100%;
     font-size: 14pt;
     line-height: 28pt;
-    font-family: "Fjalla One";
     margin-bottom: 28pt;
     border: none;
     border-bottom: 5px solid black;
@@ -171,13 +163,10 @@ header {
     color: black;
   }
   .artstyle {
-      font-family: "Fjalla One";
       font-size: 14pt;
       color: rgb(123, 117, 117);
   }
-  
   #subject {
-      font-family: "Fjalla One";
       font-size: 13pt;
       color: rgb(123, 117, 117); 
       height: 100px;
@@ -197,8 +186,7 @@ header {
   input:focus {
     border-bottom: 5px solid #ffa580;
   }
-  
-  button {
+  .form-button {
     display: block;
     margin: 0 auto;
     line-height: 28pt;
@@ -210,7 +198,7 @@ header {
     border: 1px solid black;
     box-shadow: 3px 3px 1px var(--purple), 3px 3px 1px 1px black;
   }
-  button:hover {
+  .form-button:hover {
     background: black;
     color: white;
     border: 1px solid black;
