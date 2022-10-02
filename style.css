@@ -31,10 +31,15 @@ h3 {
     color: var(--purple);
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 p {
     font-size: var(--text-size);
+    text-align: justify;
+}
+section {
+    padding: 25px;
 }
 /* navbar styling */
 header {
@@ -98,7 +103,7 @@ header {
     justify-content: center;
     gap: 30px;
 }
-.hero .wrapper {
+.wrapper {
     max-width: 800px;
 }
 .hero-h1{
@@ -203,6 +208,18 @@ header {
     color: white;
     border: 1px solid black;
   }
+/* about-us-styling */
+.about-us-ctn {
+    justify-content: center;
+    gap: 40px;
+}
+.about-us-message {
+    max-width: 700px;
+}
+.about-us-img {
+    max-width: 400px;
+    box-shadow: 2px 2px 3px 3px rgb(0, 0, 0, 0.4);
+}
 /* portfolio styling */
 .portfolio p {
     max-width: 800px;
