@@ -405,10 +405,17 @@ header {
     padding: 5px;
 }
 .images {
-    width: 500px;
-    height: 500px;
     width: calc(500px - 10px);
     height: calc(500px - 10px);
+}
+@media all and (max-width: 550px){
+    .image-carousel {
+        max-width: 300px;
+    }
+    .images {
+        width: calc(300px - 10px);
+        height: calc(300px - 10px);
+    }
 }
 .slides {
     width: 100%;
