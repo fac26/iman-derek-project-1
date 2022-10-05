@@ -529,3 +529,13 @@ section {
 .previous-slide:hover, .next-slide:hover {
     color: var(--purple);
 }
+/* footer */
+footer {
+    width: 100%;
+    padding: 5px;
+    min-height: 70px;
+    background: var(--purple);
+    color: var(--white);
+    justify-content: center;
+    font-size: 14px;;
+}
