@@ -43,3 +43,9 @@ function changeSlidesViaIndicators(indicator){
     delete currentSlide.dataset.activeSlide;
     arr[newIndicatorindex].dataset.activeSlide = true;
 }
+
+const toggleNavbar = document.querySelector(".toggle-navbar");
+const navbar = document.querySelector(".navbar")
+toggleNavbar.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+})
