@@ -1,3 +1,17 @@
+const toggleNavbar = document.querySelector(".toggle-navbar");
+const navbar = document.querySelector(".navbar")
+toggleNavbar.addEventListener("click", (e) => {
+    e.preventDefault()
+    navbar.classList.toggle("active");
+})
+// const navbarLinks = document.querySelectorAll(".link-underline-effect");
+// navbarLinks.forEach(link => link.addEventListener("click", () => {
+//     if (navbar.classList.contains("active")){
+//         navbar.classList.remove("active");
+//     }
+// }
+// ))
+
 const nextSlideBtn = document.querySelector(".next-slide");
 const previousSlideBtn = document.querySelector(".previous-slide");
 nextSlideBtn.addEventListener("click", () => {
@@ -27,6 +41,8 @@ function changeSlides(direction){
     const indicatorArr = Array.from(slideIndicators);
     indicatorArr[newIndex].dataset.activeIndicator = true;
 }
+
+// this piece of code allows you click on dots or use keyboard to navigate through instead of relying on the arrows
 const slideIndicators = document.querySelectorAll(".slide-indicator");
 slideIndicators.forEach(indicator => indicator.addEventListener(("click"), (e) => {
     changeSlidesViaIndicators(e.target);
@@ -44,16 +60,3 @@ function changeSlidesViaIndicators(indicator){
     arr[newIndicatorindex].dataset.activeSlide = true;
 }
 
-const toggleNavbar = document.querySelector(".toggle-navbar");
-const navbar = document.querySelector(".navbar")
-toggleNavbar.addEventListener("click", (e) => {
-    e.preventDefault();
-    navbar.classList.toggle("active");
-})
-const navbarLinks = document.querySelectorAll(".link-underline-effect");
-navbarLinks.forEach(link => link.addEventListener("click", () => {
-    if (navbar.classList.contains("active")){
-        navbar.classList.remove("active");
-    }
-}
-))
