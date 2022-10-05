@@ -137,9 +137,12 @@ section {
 }
 .bar {
     width: 100%;
-    height: 3px;
+    height: 4px;
     background: var(--grey);
     border-radius: 15px;
+}
+.toggle-navbar:hover > .bar {
+    background: var(--purple)
 }
 @media all and (max-width: 850px) {
     .toggle-navbar {
