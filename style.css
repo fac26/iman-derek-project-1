@@ -79,11 +79,15 @@ section {
 }
 /* navbar styling */
 .header {
+    background: var(--white);
     padding: 20px 10px;
     display: flex;
     align-items: center;
     width: 100%;
     z-index: 99;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
 }
 .navbar {
     list-style: none;
@@ -163,6 +167,9 @@ section {
     .navbar.active {
         display: flex;
     }
+}
+main {
+    margin-top: 75px;
 }
 /* hero styling */
 .hero {
