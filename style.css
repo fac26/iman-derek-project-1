@@ -192,7 +192,6 @@ section {
     background-size: cover;
     background-position: right;
     background-color: #222;
-    color: var(--white);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -244,14 +243,14 @@ section {
     padding: 10px 100px;
     border: 2px solid black;
     box-shadow: 15px 15px 1px var(--purple), 15px 15px 1px 2px black;
-    
   }
+form > * + * {
+    margin-bottom: 15px;
+}
 input {
     display: block;
     width: 100%;
     font-size: 16px;
-    line-height: 28pt;
-    margin-bottom: 28pt;
     border: none;
     border-bottom: 3px solid black;
     background: #f8f4e5;
@@ -259,15 +258,15 @@ input {
     outline: none;
     color: black;
   }
-}
 .form-label {
     font-size: var(--text-size);
     color: var(--purple);
-    margin-bottom: 3px;
+    display: block;
+    text-align: left;
 }
 #subject {
   font-size: 16px;
-  color: rgb(123, 117, 117); 
+  color: rgb(123, 117, 117);
 }
 .artstyle {
   font-size: 14pt;
@@ -281,7 +280,6 @@ input {
 #art {
   display: block;
   margin: 0 auto;
-  line-height: 28pt;
   padding: 0 20px;
   background: #ffa580;
   letter-spacing: 2px;
@@ -289,6 +287,7 @@ input {
   outline: none;
   border: 1px solid black;
   box-shadow: 3px 3px 1px var(--purple), 3px 3px 1px 1px black;
+  margin-bottom: 15px;
 }
 input:focus {
 border-bottom: 3px solid #ffa580;
