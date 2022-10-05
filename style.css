@@ -471,11 +471,20 @@ section {
 }
 @media all and (max-width: 550px){
     .image-carousel {
-        max-width: 300px;
+        max-width: 400px;
     }
     .images {
-        width: calc(300px - 10px);
-        height: calc(300px - 10px);
+        width: calc(400px - 10px);
+        height: calc(400px - 10px);
+    }
+}
+@media all and (max-width: 420px){
+    .image-carousel {
+        max-width: 280px;
+    }
+    .images {
+        width: calc(280px - 10px);
+        height: calc(280px - 10px);
     }
 }
 .slides {
