@@ -21,24 +21,27 @@
         <section class="hero2 flex-ctn-column">
             <br>
             <div class="wrapper">
-                
                 <div class="contact-us">
                     <form method="post" action="">
                         <h3>Contact us</h3>
                         <br>
-                        <input type="text" id="name" name="firstname" placeholder="Your full name.." required>
-                        <input type="text" id="email" name="email" placeholder="Your email.." required>
-                        <label class="artstyle">Select your art style...</label> <br><br>
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="firstname" placeholder="Your full name..." required>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email..." required>
+                        <label class="form-label">Select your art style...</label> <br><br>
                                       <select id="art" name="art">
                                         <option value="Realistic">Realistic</option>
                                         <option value="Oil painting">Oil painting</option>
                                         <option value="Pencil drawing">Pencil drawing</option>
                                         <option value="Concept art">Concept art</option> 
                                       </select> <br>
-                                      <textarea id="subject" name="subject" placeholder="Please describe what art you envision..." style="width:300px" required></textarea>
+                        <label for "subject" class="form-label">Message</label><br>
+                        <textarea id="subject" name="subject" placeholder="Please describe what art you envision..." style="width:300px" required></textarea>
                                       <br><br>
                         <button class="form-button"type="submit">SUBMIT</button>
                       </form>
+                </div>
             </div>
             <div class="wrapper">
                 <a href="https://beta.dreamstudio.ai" class="link-fill-effect">Click here for inspiration</a>
