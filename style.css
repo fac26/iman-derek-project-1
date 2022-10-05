@@ -1,7 +1,7 @@
 :root {
     --purple: #80558C;
     --white: #FFF;
-    --grey: #7C7C7C;
+    --grey: #5b5b5b;
     --yellow: #e9c93a;
 
     --text-size: 18px;
@@ -261,11 +261,11 @@ section {
   }
   .artstyle {
       font-size: 14pt;
-      color: rgb(123, 117, 117);
+      color: var(--grey);
   }
   #subject {
       font-size: 13pt;
-      color: rgb(123, 117, 117); 
+      color: var(--grey); 
       height: 100px;
   }
   #art {
@@ -362,7 +362,6 @@ section {
     padding-right:50px;
     padding-bottom:10px;
     padding-left:50px;
-    background-color:rgb(244, 252, 255);
   }
   .inner-container{
     max-width:1320px;
@@ -374,19 +373,11 @@ section {
     margin-left:auto;
   }
   .section-head-text{
-    margin-top:0px;
-    margin-right:0px;
-    margin-bottom:5px;
-    margin-left:0px;
-    font-size:35px;
-    font-weight:700;
-    line-height:48px;
-    color:rgb(147, 53, 181);
-    margin:0 0 10px 0;
+    margin:0 0 30px 0;
   }
   .section-subhead-text{
     font-size:25px;
-    color:rgb(153, 153, 153);
+    color: var(--grey);
     line-height:35px;
     max-width:470px;
     text-align:center;
@@ -411,18 +402,18 @@ section {
     margin-left: 90px;
   }
   .name{
-    font-size:25px;
+    font-size: var(--text-size);
     font-weight:700;
-    color:rgb(102, 102, 102);
+    color: var(--grey);
     margin-top:0px;
     margin-right:0px;
     margin-bottom:5px;
     margin-left:0px;
   }
   .position{
-    font-size:20px;
+    font-size: calc(var(--text-size) - 2px);
     font-weight:700;
-    color:rgb(147, 53, 181);
+    color: var(--purple);
     text-align: center;
   }
   .derek-img{
@@ -431,7 +422,6 @@ section {
     box-shadow: 2px 2px 3px 3px var(--purple);
     border-radius: 10%;
   }
-
   .iman-img{
     width:88%;
     height:90%;
@@ -450,8 +440,6 @@ section {
       text-align:center;
     }
   } 
-
- 
 /* portfolio styling */
 .portfolio h3 {
     color: var(--white)
@@ -540,4 +528,14 @@ section {
 }
 .previous-slide:hover, .next-slide:hover {
     color: var(--purple);
+}
+/* footer */
+footer {
+    width: 100%;
+    padding: 5px;
+    min-height: 70px;
+    background: var(--purple);
+    color: var(--white);
+    justify-content: center;
+    font-size: 14px;;
 }
