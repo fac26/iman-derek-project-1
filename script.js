@@ -1,3 +1,4 @@
+//navbar functionality
 const toggleNavbar = document.querySelector(".toggle-navbar");
 const navbar = document.querySelector(".navbar")
 toggleNavbar.addEventListener("click", (e) => {
@@ -12,6 +13,7 @@ navbarLinks.forEach(link => link.addEventListener("click", () => {
     }
 }
 ))
+
 
 // allows you to navigate through the portfolio by clicking on the left and right arrow keys
 const nextSlideBtn = document.querySelector(".next-slide");
@@ -62,6 +64,19 @@ function changeSlidesViaIndicators(indicator){
     arr[newIndicatorindex].dataset.activeSlide = true;
 }
 
-// adding validation rules to form
 
+//form email validation
+function validateMyForm() {
+    var email = document.getElementById("email").value;
+   
+    var validateEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; // Javascript reGex for email validation
 
+ 
+    if (email == '' || !validateEmail.test(email)) {
+      window.alert('Please enter a valid e-mail address. Example format: name@company.com');
+      return false;
+    }
+
+    window.alert('Thank you for contacting us, we will be in touch shortly.');
+    return true;
+  }

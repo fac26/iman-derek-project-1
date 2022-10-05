@@ -33,11 +33,14 @@
             <div class="wrapper">
                 
                 <div class="contact-us">
-                    <form method="post" action="">
+                    <!-- <form method="post" action=""> -->
+                    <form method="post" onsubmit="return validateMyForm();">
                         <h3>Contact us</h3>
-                        
+                        <label for="name" class="form-label">Name</label>
                         <input type="text" id="name" name="firstname" placeholder="Your full name.." required>
+                        <label for="companyname" class="form-label">Company name</label>
                         <input type="text" id="companyname" name="companyname" placeholder="Your company name.." required>
+                        <label for="email" class="form-label">Email</label>
                         <input type="text" id="email" name="email" placeholder="Your email.." required>
                         <label class="artstyle">Select your art style...</label> <br><br>
                                       <select id="art" name="art">
@@ -46,6 +49,7 @@
                                         <option value="Pencil drawing">Pencil drawing</option>
                                         <option value="Concept art">Concept art</option> 
                                       </select> <br>
+                                      <label for id="subject" class="form-label">Message</label><br>
                                       <textarea id="subject" name="subject" placeholder="Please describe what art you envision..." style="width:300px" required></textarea>
                                       <br><br>
                         <button class="form-button"type="submit">SUBMIT</button>
@@ -56,6 +60,5 @@
             </div>
         </section>
     </main>
-    
 </body>
 </html>
