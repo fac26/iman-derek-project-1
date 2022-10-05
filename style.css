@@ -1,7 +1,7 @@
 :root {
     --purple: #80558C;
     --white: #FFF;
-    --grey: #7C7C7C;
+    --grey: #5b5b5b;
     --yellow: #e9c93a;
 
     --text-size: 18px;
@@ -14,6 +14,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
 }
 .flex-ctn-row {
     display: flex;
@@ -37,7 +42,6 @@ h3 {
     font-size: var(--h3-size);
     color: var(--purple);
     text-align: center;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -65,7 +69,7 @@ p {
     }
 }
 section {
-    padding: 10px;
+    padding: 20px 20px;
 }
 .purple-bg {
     background: var(--purple);
@@ -74,13 +78,28 @@ section {
     background: var(--white);
 }
 /* navbar styling */
-header {
+.header {
+    background: var(--white);
     padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+}
+.header img {
+    height: 55px;
 }
 .navbar {
     list-style: none;
     gap: 20px;
-}        
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}     
+   
 .link-underline-effect {
     color: var(--grey);
     text-decoration: none;
@@ -110,6 +129,50 @@ header {
 .link-underline-effect:hover::after, .link-underline-effect:focus::after {
     transform: scaleX(1);
 }
+.toggle-navbar {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+}
+.bar {
+    width: 100%;
+    height: 4px;
+    background: var(--grey);
+    border-radius: 15px;
+}
+.toggle-navbar:hover > .bar {
+    background: var(--purple)
+}
+@media all and (max-width: 850px) {
+    .toggle-navbar {
+        display: flex
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        width: 100%;
+    }    
+    .navbar {
+        flex-direction: column;
+        display: none;
+    }
+    .navbar-ctn ul li {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar.active {
+        display: flex;
+    }
+}
+
 /* hero styling */
 .hero {
     height: 100vh;
@@ -195,6 +258,7 @@ header {
     outline: none;
     color: black;
   }
+
   .form-label {
     font-size: var(--text-size);
     color: var(--purple);
@@ -203,6 +267,14 @@ header {
   #subject {
       font-size: 16px;
       color: rgb(123, 117, 117); 
+=======
+  .artstyle {
+      font-size: 14pt;
+      color: var(--grey);
+  }
+  #subject {
+      font-size: 13pt;
+      color: var(--grey); 
       height: 100px;
   }
   #art {
@@ -237,6 +309,7 @@ header {
     color: white;
     border: 1px solid black;
   }
+
 
 /* about-us-styling */
 .about-us-ctn {
@@ -298,7 +371,6 @@ header {
     padding-right:50px;
     padding-bottom:10px;
     padding-left:50px;
-    background-color:rgb(244, 252, 255);
   }
   .inner-container{
     max-width:1320px;
@@ -310,19 +382,11 @@ header {
     margin-left:auto;
   }
   .section-head-text{
-    margin-top:0px;
-    margin-right:0px;
-    margin-bottom:5px;
-    margin-left:0px;
-    font-size:35px;
-    font-weight:700;
-    line-height:48px;
-    color:rgb(147, 53, 181);
-    margin:0 0 10px 0;
+    margin:0 0 30px 0;
   }
   .section-subhead-text{
     font-size:25px;
-    color:rgb(153, 153, 153);
+    color: var(--grey);
     line-height:35px;
     max-width:470px;
     text-align:center;
@@ -347,18 +411,18 @@ header {
     margin-left: 90px;
   }
   .name{
-    font-size:25px;
+    font-size: var(--text-size);
     font-weight:700;
-    color:rgb(102, 102, 102);
+    color: var(--grey);
     margin-top:0px;
     margin-right:0px;
     margin-bottom:5px;
     margin-left:0px;
   }
   .position{
-    font-size:20px;
+    font-size: calc(var(--text-size) - 2px);
     font-weight:700;
-    color:rgb(147, 53, 181);
+    color: var(--purple);
     text-align: center;
   }
   .derek-img{
@@ -367,7 +431,6 @@ header {
     box-shadow: 2px 2px 3px 3px var(--purple);
     border-radius: 10%;
   }
-
   .iman-img{
     width:88%;
     height:90%;
@@ -386,8 +449,6 @@ header {
       text-align:center;
     }
   } 
-
- 
 /* portfolio styling */
 .portfolio h3 {
     color: var(--white)
@@ -476,4 +537,14 @@ header {
 }
 .previous-slide:hover, .next-slide:hover {
     color: var(--purple);
+}
+/* footer */
+footer {
+    width: 100%;
+    padding: 5px;
+    min-height: 70px;
+    background: var(--purple);
+    color: var(--white);
+    justify-content: center;
+    font-size: 14px;;
 }
