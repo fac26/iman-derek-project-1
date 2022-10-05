@@ -245,7 +245,7 @@ section {
     border: 2px solid black;
     box-shadow: 15px 15px 1px var(--purple), 15px 15px 1px 2px black;
   }
-  input {
+input {
     display: block;
     width: 100%;
     font-size: 16px;
@@ -257,60 +257,57 @@ section {
     min-width: 250px;
     outline: none;
     color: black;
-  }
-
-  .form-label {
+}
+.form-label {
     font-size: var(--text-size);
     color: var(--purple);
     margin-bottom: 3px;
-  }
-  #subject {
-      font-size: 16px;
-      color: rgb(123, 117, 117); 
-=======
-  .artstyle {
-      font-size: 14pt;
-      color: var(--grey);
-  }
-  #subject {
-      font-size: 13pt;
-      color: var(--grey); 
-      height: 100px;
-  }
-  #art {
-      display: block;
-      margin: 0 auto;
-      line-height: 28pt;
-      padding: 0 20px;
-      background: #ffa580;
-      letter-spacing: 2px;
-      transition: 0.2s all ease-in-out;
-      outline: none;
-      border: 1px solid black;
-      box-shadow: 3px 3px 1px var(--purple), 3px 3px 1px 1px black;
-  }
-  input:focus {
-    border-bottom: 3px solid #ffa580;
-  }
-  .form-button {
-    display: block;
-    margin: 0 auto;
-    line-height: 28pt;
-    padding: 0 20px;
-    background: #ffa580;
-    letter-spacing: 2px;
-    transition: 0.2s all ease-in-out;
-    outline: none;
-    border: 1px solid black;
-    box-shadow: 3px 3px 1px var(--purple), 3px 3px 1px 1px black;
-  }
-  .form-button:hover {
-    background: black;
-    color: white;
-    border: 1px solid black;
-  }
-
-
+}
+#subject {
+  font-size: 16px;
+  color: rgb(123, 117, 117); 
+}
+.artstyle {
+  font-size: 14pt;
+  color: var(--grey);
+}
+#subject {
+  font-size: 13pt;
+  color: var(--grey); 
+  height: 100px;
+}
+#art {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px var(--purple), 3px 3px 1px 1px black;
+}
+input:focus {
+border-bottom: 3px solid #ffa580;
+}
+.form-button {
+display: block;
+margin: 0 auto;
+line-height: 28pt;
+padding: 0 20px;
+background: #ffa580;
+letter-spacing: 2px;
+transition: 0.2s all ease-in-out;
+outline: none;
+border: 1px solid black;
+box-shadow: 3px 3px 1px var(--purple), 3px 3px 1px 1px black;
+}
+.form-button:hover {
+background: black;
+color: white;
+border: 1px solid black;
+}
 /* about-us-styling */
 .about-us-ctn {
     justify-content: center;
