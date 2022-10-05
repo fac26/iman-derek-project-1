@@ -4,13 +4,6 @@ toggleNavbar.addEventListener("click", (e) => {
     e.preventDefault()
     navbar.classList.toggle("active");
 })
-// const navbarLinks = document.querySelectorAll(".link-underline-effect");
-// navbarLinks.forEach(link => link.addEventListener("click", () => {
-//     if (navbar.classList.contains("active")){
-//         navbar.classList.remove("active");
-//     }
-// }
-// ))
 
 const nextSlideBtn = document.querySelector(".next-slide");
 const previousSlideBtn = document.querySelector(".previous-slide");
