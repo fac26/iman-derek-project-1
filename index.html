@@ -11,10 +11,15 @@
     <title>Purple Elephant</title>
 </head>
 <body>
-    <header class="flex-ctn-row justify-space-between">
+    <header class="header justify-space-between">
         <img src="./images/pe-logo.png" alt="Purple Elephant logo">
-        <nav>
-            <ul class="flex-ctn-row navbar">
+        <a href="#" class="toggle-navbar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navbar-ctn">
+            <ul class="navbar">
                 <li><a class="link-underline-effect" href="#">Home</a></li>
                 <li><a class="link-underline-effect" href="#about-us">About us</a></li>
                 <li><a class="link-underline-effect" href="#portfolio">Portfolio</a></li>
@@ -45,11 +50,11 @@
             </div>
         </section>
         <!-- Meet the team section -->
-<section>
+<section id="meetteam">
 <div class="responsive-container-block outer-container">
     <div class="responsive-container-block inner-container">
-      <p class="text-blk section-head-text" id="meetteam">Meet Our Team
-      </p>
+      <h3 class="text-blk section-head-text" >Meet the team
+      </h3>
       <div class="responsive-container-block">
         <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
           <div class="team-card">
