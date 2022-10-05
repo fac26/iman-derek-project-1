@@ -5,6 +5,15 @@ toggleNavbar.addEventListener("click", (e) => {
     navbar.classList.toggle("active");
 })
 
+const navbarLinks = document.querySelectorAll(".link-underline-effect");
+navbarLinks.forEach(link => link.addEventListener("click", () => {
+    if (navbar.classList.contains("active")){
+        navbar.classList.remove("active");
+    }
+}
+))
+
+// allows you to navigate through the portfolio by clicking on the left and right arrow keys
 const nextSlideBtn = document.querySelector(".next-slide");
 const previousSlideBtn = document.querySelector(".previous-slide");
 nextSlideBtn.addEventListener("click", () => {
@@ -52,4 +61,7 @@ function changeSlidesViaIndicators(indicator){
     delete currentSlide.dataset.activeSlide;
     arr[newIndicatorindex].dataset.activeSlide = true;
 }
+
+// adding validation rules to form
+
 
